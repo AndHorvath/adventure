@@ -140,6 +140,7 @@ namespace Adventure
             Console.WriteLine(
                 $"\nYou have to reach {mChapters[^1].Title}." +
                 $"\nBefore moving on to a new chapter, you have to defeat the enemies, if any, in current chapter." +
+                $"\nThey are, equal in number to that of chapters, placed randomly, as well as the exit to {mChapters[^1].Title}." +
                 $"\nFor entering a new chapter you score 10 points." +
                 $"\nFor defeating an enemy you score 100 points." +
                 $"\nIf you have run out of power, you have lost.");
