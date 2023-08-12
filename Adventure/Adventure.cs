@@ -199,7 +199,7 @@ namespace Adventure
 
         private bool IsNextChaptersOrEnemies(Chapter pChapter)
         {
-            return pChapter.NextChapterIds.Count > 0 || IsEnemies(pChapter);
+            return IsNextChapters(pChapter) || IsEnemies(pChapter);
         }
 
         private bool IsPlayerPower()
