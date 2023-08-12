@@ -34,7 +34,6 @@ namespace Adventure
             mTitle = pTitle;
             mNextChapterIds = pNextChapterIds;
             mEnemies = new List<Enemy>();
-            mIsReached = false;
         }
     }
 }

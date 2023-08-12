@@ -106,6 +106,7 @@ namespace Adventure
             for (int i = 0; i < pSuffices.Length; i++)
             {
                 mChapters.Add(new Chapter(i, "Chapter" + pSuffices[i], new List<int>(nextChapterIds)));
+                mChapters[^1].IsReached = false;
             }
             for (int i = 0; i < mChapters.Count; i++)
             {
