@@ -40,13 +40,13 @@ namespace Adventure
                 if (IsNextChaptersOrEnemies(actualChapter) && IsPlayerPower())
                 {
                     WriteChapterToConsole(actualChapter);
-                    WritePlayerToConsole(actualChapter);
+                    WritePlayerToConsole();
 
                     while (IsEnemies(actualChapter) && IsPlayerPower())
                     {
                         WriteEnemiesToConsole(actualChapter);
                         Fight(actualChapter);
-                        WritePlayerToConsole(actualChapter);
+                        WritePlayerToConsole();
                     }
                     if (IsNextChapters(actualChapter) && IsPlayerPower())
                     {
@@ -147,7 +147,7 @@ namespace Adventure
                 $"\nIf you have run out of power, you have lost.");
         }
 
-        private void WritePlayerToConsole(Chapter pChapter)
+        private void WritePlayerToConsole()
         {
             Console.WriteLine($"\n{mPlayer.Name} | score: {mPlayer.Score} | power: {Math.Max(mPlayer.Power, 0)}");
         }
